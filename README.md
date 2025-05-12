@@ -1,10 +1,10 @@
 # 🤖 ALORA - Reasoning SQL Agent with Interactive Plotly Charts
 
-This project implements an intelligent agent that:
-- Generates SQL queries from natural language
-- Uses tools to explore the database (list/describe tables, find similar names)
-- Executes the query and validates the results with the user
-- Offers to automatically generate a chart (using **Plotly**)
+This project implements an intelligent agent that: <br>
+- Generates SQL queries from natural language <br>
+- Uses tools to explore the database (list/describe tables, find similar names) <br>
+- Executes the query and validates the results with the user <br>
+- Offers to automatically generate a chart (using **Plotly**) <br>
 
 All of this using **LangChain**, **LangGraph**, and an LLM like OpenAI or Gemini (Google Generative AI).
 
@@ -12,18 +12,19 @@ All of this using **LangChain**, **LangGraph**, and an LLM like OpenAI or Gemini
 
 ## 🚀 Usage Example
 
-User: How many artist are there??
-🔁 The agent analyzes the tables, generates the SQL query, executes it, and displays the results.
-🤖 Result: There are 5 employees in Calgary, 1 in Edmonton, and 2 in Lethbridge.
-✅ User approves the data.
-📊 The agent offers to generate an interactive chart with Plotly.
+User: How many artist are there?? <br>
+🔁 The agent analyzes the tables, generates the SQL query, executes it, and displays the results.<br>
+🤖 Result: There are 5 employees in Calgary, 1 in Edmonton, and 2 in Lethbridge.<br>
+✅ User approves the data.<br>
+📊 The agent offers to generate an interactive chart with Plotly.<br>
 
 ---
 
 ## ⚙️ Requirements
 
+```bash
 pip install -r requirements.txt
-
+```
 ---
 ## 🛠️ Configuration
 
@@ -38,51 +39,51 @@ Before running the agent, you'll need to configure your API keys for the Large L
 ---
 ## 📂 Project Structure
 
-ALORA/
-├── run.py               # Script to run the agent
-├── requirements.txt     # Dependencies
-├── README.md            
-├── data/
-│   └── sample.db        # Sample database
-└── src/
-    ├── config.py        # Configuration (LLM, DB, logging)
-    ├── prompts.py       # Prompt templates
-    ├── tools.py         # Tools (e.g., SQL execution, chart generation)
-    ├── nodes.py         # Graph Nodes (reasoning, approval, etc.)
-    └── graph.py         # Agent's LangGraph flow
+ALORA/ <br>
+├── run.py                   # Script to run the agent <br>
+├── requirements.txt         # Dependencies <br>
+├── README.md <br>         
+├── data/ <br>
+│   └── sample.db            # Sample database <br>
+└── src/ <br>
+    ├── config.py            # Configuration (LLM, DB, logging) <br>
+    ├── prompts.py           # Prompt templates <br>
+    ├── tools.py             # Tools (e.g., SQL execution, chart generation) <br>
+    ├── nodes.py             # Graph Nodes (reasoning, approval, etc.) <br>
+    └── graph.py             # Agent's LangGraph flow <br>
 
 
 ---
-## How to run
+## How to run <br>
 
-To run the agent, use the `run.py` script from your terminal.
+To run the agent, use the `run.py` script from your terminal. <br>
 
-**Provide a question directly as an argument:**
+**Provide a question directly as an argument:** <br>
 
-    ```bash
-    python run.py "Your question here"
-    ```
+```bash
+python run.py "Your question here"
+```
     
-This will execute the agent with your specified question, and it will output the results, including any generated charts if applicable.
+This will execute the agent with your specified question, and it will output the results, including any generated charts if applicable. <br>
 
-**Example:**
+**Example:** <br>
     
-    ```bash
-    python run.py "How many albums do artists have on average?" 
-    ```
+```bash
+python run.py "How many albums do artists have on average?" 
+```
 
 ---
-## 📜 License
+## 📜 License <br>
 
 This project is licensed under the MIT License. See the `LICENSE.md` file for details.
 
 ---
-## 🤝 Contributing
+## 🤝 Contributing <br>
 
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/your-feature-name`).
-3.  Make your changes and commit them (`git commit -m 'Add some feature'`).
-4.  Push to the branch (`git push origin feature/your-feature-name`).
-5.  Open a Pull Request.
+1.  Fork the repository. <br>
+2.  Create a new branch (`git checkout -b feature/your-feature-name`). <br>
+3.  Make your changes and commit them (`git commit -m 'Add some feature'`). <br>
+4.  Push to the branch (`git push origin feature/your-feature-name`). <br>
+5.  Open a Pull Request. <br>
